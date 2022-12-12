@@ -7,4 +7,6 @@ void main() {
   print(name3);
   bool isBiggerThanZero = number_double > 3;
   print(isBiggerThanZero);
+  String? user_name;
+  print(user_name);
 }
