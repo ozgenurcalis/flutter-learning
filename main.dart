@@ -1,8 +1,13 @@
 void main() {
-  int number = 5;
-  int number2 = 10;
-  var c = number / number2;
-  print(number++);
-  bool isBigger = number >= number;
-  print(isBigger);
+  var number = 4;
+  if (number > 7) {
+  } else if (number >= 7 && number < 9) {
+    print("Number is between expectation");
+  } else if (number >= 9 && number < 11) {
+    print(" Number is between expectation");
+  } else if (number >= 7 && number < 9) {
+    print("Number is between expectation ");
+  } else {
+    print("Number is smaller");
+  }
 }
