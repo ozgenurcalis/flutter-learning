@@ -1,17 +1,19 @@
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-
 void main() {
-  String mesaj = " Merhaba İlk Uygulamam";
-runApp(MaterialApp(
-  home: Scaffold(
-    appBar: AppBar(
-     title: Text (mesaj),
-    ),
-    body: Center(
-      child: Text("GÖVDE KISIM"),
-    ),
-  ),
-));
+  var sistemeGirmisMi = true;
+
+  if (sistemeGirmisMi == true) {
+    print("anasayfaya gidildi");
+  }
+
+  if (sistemeGirmisMi == false) {
+    print("login sayfasina gidildi");
+  }
+  int puan = 45;
+  if (puan >= 50) {
+    print('Geçti');
+  } else if (puan >= 40) {
+    print('Büt');
+  } else {
+    print('Kaldı');
+  }
 }
