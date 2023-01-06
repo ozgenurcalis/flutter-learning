@@ -1,49 +1,23 @@
-import 'package:flutter/material.dart';
-
 void main() {
-  var sistemeGirmisMi = true;
-
-  if (sistemeGirmisMi == true) {
-    print("anasayfaya gidildi");
+  for (var i = 1; i <= 10; i = i + 1) {
+    print(i);
+  }
+  var products = ["laptop", "mouse", "keyboard"];
+  for (var i = 0; i < products.length; i++) {
+    print(products[i]);
+  }
+  for (var product in products) {
+    print(product);
   }
 
-  if (sistemeGirmisMi == false) {
-    print("login sayfasina gidildi");
+  int sayi = 1;
+  while (sayi <= 10) {
+    print(sayi);
+    sayi++;
   }
-  int puan = 15;
-  if (puan >= 50) {
-    print('Geçti');
-  } else if (puan >= 40) {
-    print('Büt');
-  } else {
-    print('Kaldı');
-  }
-
-  String not = "F";
-  switch (not) {
-    case "A":
-      {
-        print("very good");
-      }
-      break;
-    case "B":
-      {
-        print("good");
-      }
-      break;
-    case "C":
-      {
-        print("not bad");
-      }
-      break;
-    case "D":
-      {
-        print("bad");
-      }
-      break;
-    default:
-      {
-        print("Unknow");
-      }
-  }
+  var sayi2 = 10;
+  do {
+    print("sayi2=" + sayi2.toString());
+    sayi2++;
+  } while (sayi2 > 1000);
 }
